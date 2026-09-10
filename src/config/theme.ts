@@ -1,28 +1,32 @@
 import type { Theme } from '../types';
 
-// Set brand colours, fonts, corner shapes and maximum page width here.
 export const theme = {
-  "colours": {
-    "background": "#0755c8",
-    "surface": "#04439e",
-    "text": "#ffffff",
-    "muted": "#d2e4ff",
-    "border": "#5789d4",
-    "primary": "#ffffff",
-    "onPrimary": "#062753",
-    "accent": "#58E7FF",
-    "onAccent": "#062753",
-    "feature": "#052c67",
-    "onFeature": "#ffffff"
+  colours: {
+    background: '#F4F8FC',
+    surface: '#FFFFFF',
+    text: '#0A1628',
+    muted: '#617086',
+    border: '#D8E2EE',
+
+    primary: '#0755C8',
+    onPrimary: '#FFFFFF',
+
+    accent: '#19A7FF',
+    onAccent: '#FFFFFF',
+
+    feature: '#E8F4FF',
+    onFeature: '#0755C8',
   },
-  "fonts": {
-    "body": "Arial, sans-serif",
-    "heading": "\"Arial Black\", Arial, sans-serif",
-    "accent": "Georgia, serif"
+
+  fonts: {
+    body: 'Inter, Helvetica, Arial, sans-serif',
+    heading: 'Inter, Helvetica, Arial, sans-serif',
+    accent: 'Inter, Helvetica, Arial, sans-serif',
   },
-  "shape": {
-    "radius": "1rem",
-    "buttonRadius": "4rem",
-    "contentWidth": "78rem"
-  }
+
+  shape: {
+    radius: '20px',
+    buttonRadius: '999px',
+    contentWidth: '92rem',
+  },
 } satisfies Theme;

@@ -8,9 +8,10 @@ export const Header = ({ client }: { client: ClientConfig }) => {
   const toggle = useRef<HTMLButtonElement>(null);
   const links = client.sections.filter((section) => section.navLabel);
 
-  return <header className="site-header container" onKeyDown={(event) => {
-    if (event.key === 'Escape' && open) { setOpen(false); toggle.current?.focus(); }
-  }}>
+  return <header className="site-header ev-header container"
+    onKeyDown={(event) => {
+      if (event.key === 'Escape' && open) { setOpen(false); toggle.current?.focus(); }
+    }}>
     <a className="brand" href="#top" aria-label={client.business.name}>
       {client.business.logo ? <Photo image={client.business.logo} /> : <span className="brand-mark" aria-hidden="true">{client.business.monogram}</span>}
       <span>{client.business.name}</span>
