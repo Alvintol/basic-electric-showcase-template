@@ -3,7 +3,7 @@ import { readFile, writeFile, access } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
 // Render the configured React page at build time. Hosting needs only dist/.
-const server = await createServer({ server: { middlewareMode: true, hmr: false, watch: null }, appType: 'custom' });
+const server = await createServer({ mode: 'static-render', server: { middlewareMode: true, hmr: false, watch: null }, appType: 'custom' });
 const escape = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 try {
   const { client, theme, render, validateConfig } = await server.ssrLoadModule('/src/entry-server.tsx');
