@@ -29,7 +29,7 @@ The build type-checks TypeScript, bundles the React application, validates local
 1. Make a copy of this template for the client. Keep the original demo as your starting point.
 2. Edit `src/config/client.ts`: name, text, page title/description, navigation, calls to action, services, photo items, contact details and footer.
 3. Put the client's images in `public/images/`. Set the corresponding `src`, `alt`, `width`, `height` and optional `position` fields. Paths begin with `images/` without a leading slash. The image file extension must match the actual file.
-4. Edit `src/config/theme.ts`: colours, font stacks, radii and content width. Every template uses the same token names. The `onPrimary`, `onAccent` and `onFeature` colours control the text on those backgrounds. Check contrast after changing them.
+4. Edit `src/config/theme.ts`: colours, font stacks, radii and content width. Every template uses the same core token names. The `onPrimary`, `onAccent` and `onFeature` colours control the text on those backgrounds. Electric Showcase also supports `heroSurface` and `onHero` for the dark header and photo overlay, independently of the light page palette. Check contrast after changing them.
 5. Set up contact behaviour (below). Then set `demo.enabled` to `false`, set `seo.title`, `seo.description`, the client's full HTTPS `seo.url`, and `seo.indexable` to `true` when ready for search engines. Clear the fictional-business footer copy and sample-image descriptions.
 6. Run `npm run check:config` and `npm run build`, then deploy `dist/` through your hosting provider. Test the deployed contact path with the client.
 

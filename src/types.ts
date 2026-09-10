@@ -83,6 +83,7 @@ export type Theme = {
     background: string; surface: string; text: string; muted: string;
     border: string; primary: string; onPrimary: string;
     accent: string; onAccent: string; feature: string; onFeature: string;
+    heroSurface?: string; onHero?: string;
   };
   fonts: { body: string; heading: string; accent: string };
   shape: { radius: string; buttonRadius: string; contentWidth: string };

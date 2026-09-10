@@ -12,7 +12,11 @@ export const theme = {
     onPrimary: '#FFFFFF',
 
     accent: '#19A7FF',
-    onAccent: '#FFFFFF',
+    onAccent: '#0A1628',
+
+    // Keep photo-backed text independent from the light page palette.
+    heroSurface: '#061B36',
+    onHero: '#FFFFFF',
 
     feature: '#E8F4FF',
     onFeature: '#0755C8',
