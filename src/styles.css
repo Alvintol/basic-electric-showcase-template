@@ -352,9 +352,13 @@ textarea:focus-visible {
   gap: 1.6rem;
   min-width: 0;
 }
-.item-number {
-  font-size: 0.875rem;
-  color: var(--accent);
+.service-body {
+  min-width: 0;
+}
+.service-card h3,
+.process-list h3,
+.hero-highlights h2 {
+  overflow-wrap: anywhere;
 }
 .service-body > p {
   color: var(--muted);
@@ -434,19 +438,13 @@ textarea:focus-visible {
   list-style: none;
 }
 .process-list li {
-  display: flex;
-  gap: 1.5rem;
+  display: block;
   padding: 1.5rem 0;
   border-top: 1px solid var(--border);
 }
 .process-list li:first-child {
   padding-top: 0;
   border-top: 0;
-}
-.step-number {
-  color: var(--primary);
-  font-size: 0.94rem;
-  min-width: 2rem;
 }
 .process-list p {
   margin-top: 0.65rem;
@@ -1382,6 +1380,7 @@ form .button {
 .service-card {
   position: relative;
 
+  height: auto;
   min-height: 24rem;
 
   padding: clamp(1.5rem, 2.5vw, 2.25rem);
@@ -1415,7 +1414,6 @@ form .button {
   box-shadow: 0 20px 50px rgba(7, 85, 200, 0.22);
 }
 
-.service-card:nth-child(2) .item-number,
 .service-card:nth-child(2) .service-body > p,
 .service-card:nth-child(2) .feature-list,
 .service-card:nth-child(2) .price {
@@ -1439,13 +1437,6 @@ form .button {
 
   font-weight: 500;
   line-height: 1.15;
-}
-
-.item-number {
-  color: var(--ev-blue);
-
-  font-size: 0.8125rem;
-  letter-spacing: 0.1em;
 }
 
 .service-subtitle {
