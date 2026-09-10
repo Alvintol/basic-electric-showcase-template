@@ -35,9 +35,11 @@ export const client = {
     "href": "#contact"
   },
   "hero": {
-    "eyebrow": "FOR DRIVERS WHO NOTICE THE DETAILS",
+    "eyebrow": "FOR DRIVERS WHO NOTICE",
     "title": [
-      "DRIVEN CLEAN."
+      "CLEAN",
+      "WITHOUT",
+      "COMPROMISE."
     ],
     "description": "Mobile detailing with a sharp finish and zero waiting-room time.",
     "primaryAction": {

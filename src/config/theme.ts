@@ -10,7 +10,7 @@ export const theme = {
     "border": "#5789d4",
     "primary": "#ffffff",
     "onPrimary": "#062753",
-    "accent": "#b8f5ff",
+    "accent": "#58E7FF",
     "onAccent": "#062753",
     "feature": "#052c67",
     "onFeature": "#ffffff"
