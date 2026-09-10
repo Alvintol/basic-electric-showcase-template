@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { createServer } from 'vite';
 
 // Checks the reusable contract: client swaps, section changes and gallery variants.
-const server = await createServer({ server: { middlewareMode: true, hmr: false, watch: null }, appType: 'custom' });
+const server = await createServer({ mode: 'static-render', server: { middlewareMode: true, hmr: false, watch: null }, appType: 'custom' });
 try {
   const { client, theme, render, validateConfig } = await server.ssrLoadModule('/src/entry-server.tsx');
   validateConfig(client, theme);
