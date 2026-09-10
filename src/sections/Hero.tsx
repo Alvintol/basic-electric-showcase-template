@@ -13,8 +13,6 @@ export const Hero = ({ hero }: { hero: ClientConfig['hero'] }) => (
 
     <div className="ev-hero-content container">
       <div className="ev-hero-topline">
-        <span className="ev-hero-index">01</span>
-
         <span className="eyebrow">
           {hero.eyebrow}
         </span>

@@ -4,7 +4,7 @@ import type { ClientConfig } from '../types';
 export const client = {
   "demo": {
     "enabled": true,
-    "label": "BASIC 02 / ELECTRIC SHOWCASE",
+    "label": "ELECTRIC SHOWCASE",
     "note": "Created by Alvin · Fictional business"
   },
   "business": {
@@ -62,15 +62,15 @@ export const client = {
     "locationLabel": "YYC / MOBILE DETAILING",
     "highlights": [
       {
-        "title": "01 / We come to you",
+        "title": "We come to you",
         "description": "Home or work. Your call."
       },
       {
-        "title": "02 / The full picture",
+        "title": "The full picture",
         "description": "Choose the care your car needs."
       },
       {
-        "title": "03 / A fresh finish",
+        "title": "A fresh finish",
         "description": "Ready for the next drive."
       }
     ]
